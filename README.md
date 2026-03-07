@@ -74,3 +74,44 @@ The training data consists of a **JSON lines file**, where each line contains:
   "sentiment": true
 }
 ```
+
+- **True** → positive review
+- **False** → negative review
+
+## Approach
+
+1. Reviews are converted into numerical features using a **bag-of-words representation**.
+2. A **Multinomial Naive Bayes classifier** is trained on the review data.
+3. The trained model predicts whether a review expresses **positive or negative sentiment**.
+
+The implementation uses the **scikit-learn** library for efficient training.
+
+---
+
+## Technologies Used
+
+- Python
+- scikit-learn
+- JSON processing
+- Natural Language Processing techniques
+
+---
+
+## Files
+
+| File                             | Description                                                   |
+| -------------------------------- | ------------------------------------------------------------- |
+| `hw2.py`                         | Main implementation of trigram model and sentiment classifier |
+| `HW2_grader.py`                  | Provided grader used to evaluate the implementation           |
+| `problem1_trainingFile.txt`      | Training data for the trigram model                           |
+| `problem2_trainingFile.jsonlist` | Training data for sentiment classification                    |
+
+---
+
+## Key Concepts Demonstrated
+
+- N-gram language models
+- Sentence probability estimation
+- Log probability scoring
+- Naive Bayes classification
+- Bag-of-words text representation
