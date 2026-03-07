@@ -43,7 +43,7 @@ During training we compute:
 
 These statistics allow us to compute trigram probabilities.
 
-Sentence padding is used to represent sentence boundaries: <s> <s> word1 word2 ... wordN </s>
+Sentence padding is used to represent sentence boundaries: `<s> <s> word1 word2 ... wordN </s>`
 
 ## Testing
 
